@@ -1,10 +1,10 @@
-concept,name,type,unit
-location_id,Location ID,entity domain,years
-location_code,Country ISO 3166-1 Alpha-3 Code or GBD Region Code,string,years
-location_name,Country or Region Name,string,years
-year,Year ,time,years
-age_group_id,Age Group ID,entity domain,years
-age_group_name,Age Group Name,string,years
-sex_id,Sex ID,entity domain,years
-sex_name,Sex Name,string,years
-unit,Unit,string,years
+concept,name,type
+location_id,Location ID,entity domain
+location_code,Country ISO 3166-1 Alpha-3 Code or GBD Region Code,string
+location_name,Country or Region Name,string
+year,Year ,time
+age_group_id,Age Group ID,entity domain
+age_group_name,Age Group Name,string
+sex_id,Sex ID,entity domain
+sex_name,Sex Name,string
+unit,Unit,string

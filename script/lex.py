@@ -18,13 +18,11 @@ def extract_concept_discrete(codebook):
     dis_concept = codebook.ix[:1].T.ix[:10]
     dis_concept = dis_concept.drop(9)  # drop the concept "Metric", not used any where.
 
-    # fill the columns: concept/name/type/unit
+    # fill the columns: concept/name/type
     dis_concept.columns = ['concept', 'name']
     dis_concept['type'] = 'string'
     dis_concept['type'].ix[[1, 5, 7]] = 'entity domain'
     dis_concept['type'].ix[4] = 'time'
-
-    dis_concept['unit'] = 'years'
 
     return dis_concept
 
@@ -35,9 +33,10 @@ def extract_concept_continuous(codebook):
     # get all concepts and names
     cont_concept = codebook.ix[:1].T.ix[11:]
 
-    # fill the columns: concept/name/type
+    # fill the columns: concept/name/type/unit
     cont_concept.columns = ['concept', 'name']
     cont_concept['type'] = 'measure'
+    cont_concept['unit'] = 'years'
 
     return cont_concept
 
