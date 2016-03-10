@@ -47,6 +47,7 @@ def extract_entities_country(codebook):
     # get all columns for country
     ent_country = codebook.ix[:, :3]
 
+    # reset the columns
     ent_country.columns = ent_country.ix[0]
     ent_country = ent_country.drop([0, 1])
     ent_country = ent_country.dropna(how='all')
