@@ -91,20 +91,20 @@ if __name__ == '__main__':
 
     print('creating concept files...')
     discrete = extract_concept_discrete(codebook)
-    discrete.to_csv(os.path.join(out_dir, 'ddf--concept--discrete.csv'), index=False)
+    discrete.to_csv(os.path.join(out_dir, 'ddf--concepts--discrete.csv'), index=False)
 
     continuous = extract_concept_continuous(codebook)
-    continuous.to_csv(os.path.join(out_dir, 'ddf--concept--continuous.csv'), index=False)
+    continuous.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
 
     print('creating entities files...')
     country = extract_entities_country(codebook)
-    country.to_csv(os.path.join(out_dir, 'ddf--entities--country.csv'), index=False)
+    country.to_csv(os.path.join(out_dir, 'ddf--entities--location_id.csv'), index=False)
 
     age = extract_entities_age_group(codebook)
-    age.to_csv(os.path.join(out_dir, 'ddf--entities--age_group.csv'), index=False)
+    age.to_csv(os.path.join(out_dir, 'ddf--entities--age_group_id.csv'), index=False)
 
     sex = extract_entities_sex(codebook)
-    sex.to_csv(os.path.join(out_dir, 'ddf--entities--sex.csv'), index=False)
+    sex.to_csv(os.path.join(out_dir, 'ddf--entities--sex_id.csv'), index=False)
 
     print('creating data points files...')
     mean = data.ix[:, [0, 3, 4, 6, 10]]
