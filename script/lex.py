@@ -21,16 +21,10 @@ def extract_concept_discrete(codebook):
     # fill the columns: concept/name/type
     dis_concept.columns = ['concept', 'name']
     dis_concept['type'] = 'string'
-    dis_concept['type'].ix[[1, 5, 7]] = 'entity_set'
+    dis_concept['type'].ix[[1, 5, 7]] = 'entity domain'
     dis_concept['type'].ix[4] = 'time'
 
-    dis_concept = dis_concept.set_index('concept')
-    dis_concept = dis_concept.rename(index={'location_id': 'location',
-                                            'sex_id': 'sex',
-                                            'age_group_id': 'age_group'
-                                            })
-
-    return dis_concept.reset_index()
+    return dis_concept
 
 
 def extract_concept_continuous(codebook):
@@ -58,8 +52,6 @@ def extract_entities_country(codebook):
     ent_country = ent_country.drop([0, 1])
     ent_country = ent_country.dropna(how='all')
 
-    ent_country = ent_country.rename(columns={'location_id': 'location'})
-
     return ent_country
 
 
@@ -71,8 +63,6 @@ def extract_entities_age_group(codebook):
     ent_age.columns = ent_age.ix[0]
     ent_age = ent_age.drop([0, 1])
 
-    ent_age = ent_age.rename(columns={'age_group_id': 'age_group'})
-
     return ent_age
 
 
@@ -83,8 +73,6 @@ def extract_entities_sex(codebook):
     ent_sex = ent_sex.dropna(how='all')
     ent_sex.columns = ent_sex.ix[0]
     ent_sex = ent_sex.drop([0, 1])
-
-    ent_sex = ent_sex.rename(columns={'sex_id': 'sex'})
 
     return ent_sex
 
@@ -103,14 +91,14 @@ if __name__ == '__main__':
 
     print('creating concept files...')
     discrete = extract_concept_discrete(codebook)
-    discrete.to_csv(os.path.join(out_dir, 'ddf--concepts--discrete.csv'), index=False)
+    discrete.to_csv(os.path.join(out_dir, 'ddf--concept--discrete.csv'), index=False)
 
     continuous = extract_concept_continuous(codebook)
-    continuous.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
+    continuous.to_csv(os.path.join(out_dir, 'ddf--concept--continuous.csv'), index=False)
 
     print('creating entities files...')
     country = extract_entities_country(codebook)
-    country.to_csv(os.path.join(out_dir, 'ddf--entities--location.csv'), index=False)
+    country.to_csv(os.path.join(out_dir, 'ddf--entities--country.csv'), index=False)
 
     age = extract_entities_age_group(codebook)
     age.to_csv(os.path.join(out_dir, 'ddf--entities--age_group.csv'), index=False)
@@ -119,19 +107,16 @@ if __name__ == '__main__':
     sex.to_csv(os.path.join(out_dir, 'ddf--entities--sex.csv'), index=False)
 
     print('creating data points files...')
-
-    rm = {'location_id': 'location', 'age_group_id': 'age_group', 'sex_id': 'sex'}
-
-    mean = data.ix[:, [0, 3, 4, 6, 10]].rename(columns=rm)
-    upper = data.ix[:, [0, 3, 4, 6, 11]].rename(columns=rm)
-    lower = data.ix[:, [0, 3, 4, 6, 12]].rename(columns=rm)
+    mean = data.ix[:, [0, 3, 4, 6, 10]]
+    upper = data.ix[:, [0, 3, 4, 6, 11]]
+    lower = data.ix[:, [0, 3, 4, 6, 12]]
 
     mean.to_csv(os.path.join(
         out_dir,
-        'ddf--datapoints--mean--by--location--age_group--sex--year.csv'), index=False)
+        'ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year.csv'), index=False)
     upper.to_csv(os.path.join(
         out_dir,
-        'ddf--datapoints--upper--by--location--age_group--sex--year.csv'), index=False)
+        'ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year.csv'), index=False)
     lower.to_csv(os.path.join(
         out_dir,
-        'ddf--datapoints--lower--by--location--age_group--sex--year.csv'), index=False)
+        'ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year.csv'), index=False)
