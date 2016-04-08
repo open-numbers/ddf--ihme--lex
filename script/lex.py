@@ -2,6 +2,7 @@
 """transform the life expectancy data from IHME to DDF data model."""
 
 import pandas as pd
+from index import create_index_file
 
 # configuration of file path.
 # code book contains all concepts and entities in the data set.
@@ -21,7 +22,7 @@ def extract_concept_discrete(codebook):
     # fill the columns: concept/name/type
     dis_concept.columns = ['concept', 'name']
     dis_concept['type'] = 'string'
-    dis_concept['type'].ix[[1, 5, 7]] = 'entity domain'
+    dis_concept['type'].ix[[1, 5, 7]] = 'entity_domain'
     dis_concept['type'].ix[4] = 'time'
 
     return dis_concept
@@ -120,3 +121,6 @@ if __name__ == '__main__':
     lower.to_csv(os.path.join(
         out_dir,
         'ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year.csv'), index=False)
+
+    print('generating index file...')
+    create_index_file(out_dir, os.path.join(out_dir, 'ddf--index.csv'))
