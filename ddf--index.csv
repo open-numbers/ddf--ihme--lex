@@ -1,0 +1,13 @@
+key,value,file
+concept,name,ddf--concepts--continuous.csv
+concept,type,ddf--concepts--continuous.csv
+concept,unit,ddf--concepts--continuous.csv
+concept,name,ddf--concepts--discrete.csv
+concept,type,ddf--concepts--discrete.csv
+"location_id,age_group_id,sex_id,year",lower,ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year.csv
+"location_id,age_group_id,sex_id,year",mean,ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year.csv
+"location_id,age_group_id,sex_id,year",upper,ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year.csv
+age_group_id,age_group_name,ddf--entities--age_group_id.csv
+location_id,location_code,ddf--entities--location_id.csv
+location_id,location_name,ddf--entities--location_id.csv
+sex_id,sex_name,ddf--entities--sex_id.csv
