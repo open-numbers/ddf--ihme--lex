@@ -2,6 +2,7 @@
 """transform the life expectancy data from IHME to DDF data model."""
 
 import pandas as pd
+import numpy as np
 from index import create_index_file
 
 # configuration of file path.
@@ -42,8 +43,26 @@ def extract_concept_continuous(codebook):
     return cont_concept
 
 
-def extract_entities_country(codebook):
+def extract_entities_country(codebook, data):
     """extract country entities from codebok"""
+    # Note for 2014 version of data:
+    # the codebook contains error that 2 countries names are missing
+    # and other countries names are shifted up 2 rows in the codebook.
+    # so here we first compare the codebook and data to see if
+    # the countries info are same in both file.
+    cb = codebook.copy()
+    cb.columns = cb.ix[0]
+    cb = cb.drop([0, 1])
+    d1 = data[['location_id', 'location_name', 'location_code']]\
+         .drop_duplicates().set_index('location_id')
+    d2 = cb[['location_id', 'location_name', 'location_code']]\
+         .drop_duplicates().set_index('location_id')
+
+    try:
+        assert np.all(d1['location_name'] == d2['location_name'])
+        assert np.all(d1['location_code'] == d2['location_code'])
+    except:
+        raise ValueError("Country info mismatch in codebook and data file! Please check and fix it.")
 
     # get all columns for country
     ent_country = codebook.ix[:, :3]
@@ -98,7 +117,7 @@ if __name__ == '__main__':
     continuous.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
 
     print('creating entities files...')
-    country = extract_entities_country(codebook)
+    country = extract_entities_country(codebook, data)
     country.to_csv(os.path.join(out_dir, 'ddf--entities--location_id.csv'), index=False)
 
     age = extract_entities_age_group(codebook)
