@@ -22,9 +22,9 @@ def extract_concept_discrete(codebook):
 
     # fill the columns: concept/name/type
     dis_concept.columns = ['concept', 'name']
-    dis_concept['type'] = 'string'
-    dis_concept['type'].ix[[1, 5, 7]] = 'entity_domain'
-    dis_concept['type'].ix[4] = 'time'
+    dis_concept['concept_type'] = 'string'
+    dis_concept['concept_type'].ix[[1, 5, 7]] = 'entity_domain'
+    dis_concept['concept_type'].ix[4] = 'time'
 
     return dis_concept
 
@@ -37,7 +37,7 @@ def extract_concept_continuous(codebook):
 
     # fill the columns: concept/name/type/unit
     cont_concept.columns = ['concept', 'name']
-    cont_concept['type'] = 'measure'
+    cont_concept['concept_type'] = 'measure'
     cont_concept['unit'] = 'years'
 
     return cont_concept
