@@ -1,0 +1,182 @@
+{
+    "name": "ddf--ihme-lex",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts--continuous.csv",
+            "name": "ddf--concepts--continuous",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "type"
+                    },
+                    {
+                        "name": "unit"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--concepts--discrete.csv",
+            "name": "ddf--concepts--discrete",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year.csv",
+            "name": "ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location_id"
+                    },
+                    {
+                        "name": "age_group_id"
+                    },
+                    {
+                        "name": "sex_id"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "lower"
+                    }
+                ],
+                "primaryKey": [
+                    "location_id",
+                    "age_group_id",
+                    "sex_id",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year.csv",
+            "name": "ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location_id"
+                    },
+                    {
+                        "name": "age_group_id"
+                    },
+                    {
+                        "name": "sex_id"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "mean"
+                    }
+                ],
+                "primaryKey": [
+                    "location_id",
+                    "age_group_id",
+                    "sex_id",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year.csv",
+            "name": "ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location_id"
+                    },
+                    {
+                        "name": "age_group_id"
+                    },
+                    {
+                        "name": "sex_id"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "upper"
+                    }
+                ],
+                "primaryKey": [
+                    "location_id",
+                    "age_group_id",
+                    "sex_id",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--age_group_id.csv",
+            "name": "ddf--entities--age_group_id",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "age_group_id"
+                    },
+                    {
+                        "name": "age_group_name"
+                    }
+                ],
+                "primaryKey": "age_group_id"
+            }
+        },
+        {
+            "path": "ddf--entities--location_id.csv",
+            "name": "ddf--entities--location_id",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location_id"
+                    },
+                    {
+                        "name": "location_code"
+                    },
+                    {
+                        "name": "location_name"
+                    }
+                ],
+                "primaryKey": "location_id"
+            }
+        },
+        {
+            "path": "ddf--entities--sex_id.csv",
+            "name": "ddf--entities--sex_id",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "sex_id"
+                    },
+                    {
+                        "name": "sex_name"
+                    }
+                ],
+                "primaryKey": "sex_id"
+            }
+        }
+    ]
+}
