@@ -16,10 +16,7 @@
                         "name": "name"
                     },
                     {
-                        "name": "type"
-                    },
-                    {
-                        "name": "unit"
+                        "name": "concept_type"
                     }
                 ],
                 "primaryKey": "concept"
@@ -37,102 +34,102 @@
                         "name": "name"
                     },
                     {
-                        "name": "type"
+                        "name": "concept_type"
                     }
                 ],
                 "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year.csv",
-            "name": "ddf--datapoints--lower--by--location_id--age_group_id--sex_id--year",
+            "path": "ddf--datapoints--life_expectancy_lower--by--location--sex--age_group--year.csv",
+            "name": "ddf--datapoints--life_expectancy_lower--by--location--sex--age_group--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "location_id"
+                        "name": "location"
                     },
                     {
-                        "name": "age_group_id"
+                        "name": "sex"
                     },
                     {
-                        "name": "sex_id"
+                        "name": "age_group"
                     },
                     {
                         "name": "year"
                     },
                     {
-                        "name": "lower"
+                        "name": "life_expectancy_lower"
                     }
                 ],
                 "primaryKey": [
-                    "location_id",
-                    "age_group_id",
-                    "sex_id",
+                    "location",
+                    "sex",
+                    "age_group",
                     "year"
                 ]
             }
         },
         {
-            "path": "ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year.csv",
-            "name": "ddf--datapoints--mean--by--location_id--age_group_id--sex_id--year",
+            "path": "ddf--datapoints--life_expectancy_mean--by--location--sex--age_group--year.csv",
+            "name": "ddf--datapoints--life_expectancy_mean--by--location--sex--age_group--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "location_id"
+                        "name": "location"
                     },
                     {
-                        "name": "age_group_id"
+                        "name": "sex"
                     },
                     {
-                        "name": "sex_id"
+                        "name": "age_group"
                     },
                     {
                         "name": "year"
                     },
                     {
-                        "name": "mean"
+                        "name": "life_expectancy_mean"
                     }
                 ],
                 "primaryKey": [
-                    "location_id",
-                    "age_group_id",
-                    "sex_id",
+                    "location",
+                    "sex",
+                    "age_group",
                     "year"
                 ]
             }
         },
         {
-            "path": "ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year.csv",
-            "name": "ddf--datapoints--upper--by--location_id--age_group_id--sex_id--year",
+            "path": "ddf--datapoints--life_expectancy_upper--by--location--sex--age_group--year.csv",
+            "name": "ddf--datapoints--life_expectancy_upper--by--location--sex--age_group--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "location_id"
+                        "name": "location"
                     },
                     {
-                        "name": "age_group_id"
+                        "name": "sex"
                     },
                     {
-                        "name": "sex_id"
+                        "name": "age_group"
                     },
                     {
                         "name": "year"
                     },
                     {
-                        "name": "upper"
+                        "name": "life_expectancy_upper"
                     }
                 ],
                 "primaryKey": [
-                    "location_id",
-                    "age_group_id",
-                    "sex_id",
+                    "location",
+                    "sex",
+                    "age_group",
                     "year"
                 ]
             }
         },
         {
-            "path": "ddf--entities--age_group_id.csv",
-            "name": "ddf--entities--age_group_id",
+            "path": "ddf--entities--age_group.csv",
+            "name": "ddf--entities--age_group",
             "schema": {
                 "fields": [
                     {
@@ -140,42 +137,48 @@
                     },
                     {
                         "name": "age_group_name"
+                    },
+                    {
+                        "name": "age_group"
                     }
                 ],
-                "primaryKey": "age_group_id"
+                "primaryKey": "age_group"
             }
         },
         {
-            "path": "ddf--entities--location_id.csv",
-            "name": "ddf--entities--location_id",
+            "path": "ddf--entities--location.csv",
+            "name": "ddf--entities--location",
             "schema": {
                 "fields": [
                     {
                         "name": "location_id"
                     },
                     {
-                        "name": "location_code"
+                        "name": "location_name"
                     },
                     {
-                        "name": "location_name"
+                        "name": "location"
                     }
                 ],
-                "primaryKey": "location_id"
+                "primaryKey": "location"
             }
         },
         {
-            "path": "ddf--entities--sex_id.csv",
-            "name": "ddf--entities--sex_id",
+            "path": "ddf--entities--sex.csv",
+            "name": "ddf--entities--sex",
             "schema": {
                 "fields": [
+                    {
+                        "name": "sex_label"
+                    },
                     {
                         "name": "sex_id"
                     },
                     {
-                        "name": "sex_name"
+                        "name": "sex"
                     }
                 ],
-                "primaryKey": "sex_id"
+                "primaryKey": "sex"
             }
         }
     ]

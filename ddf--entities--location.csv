@@ -1,0 +1,290 @@
+location_id,location_name,location
+1,Global,global
+44635,High SDI,high_sdi
+44634,High-middle SDI,high_middle_sdi
+44639,Middle SDI,middle_sdi
+44636,Low-middle SDI,low_middle_sdi
+44637,Low SDI,low_sdi
+64,High-income,high_income
+100,High-income North America,high_income_north_america
+101,Canada,canada
+349,Greenland,greenland
+102,United States,united_states
+70,Australasia,australasia
+71,Australia,australia
+72,New Zealand,new_zealand
+65,High-income Asia Pacific,high_income_asia_pacific
+66,Brunei,brunei
+67,Japan,japan
+69,Singapore,singapore
+68,South Korea,south_korea
+73,Western Europe,western_europe
+74,Andorra,andorra
+75,Austria,austria
+76,Belgium,belgium
+77,Cyprus,cyprus
+78,Denmark,denmark
+79,Finland,finland
+80,France,france
+81,Germany,germany
+82,Greece,greece
+83,Iceland,iceland
+84,Ireland,ireland
+85,Israel,israel
+86,Italy,italy
+87,Luxembourg,luxembourg
+88,Malta,malta
+89,Netherlands,netherlands
+90,Norway,norway
+91,Portugal,portugal
+92,Spain,spain
+93,Sweden,sweden
+4944,Stockholm,stockholm
+4940,Sweden except Stockholm,sweden_except_stockholm
+94,Switzerland,switzerland
+95,United Kingdom,united_kingdom
+4749,England,england
+4621,East Midlands,east_midlands
+4623,East of England,east_of_england
+4624,Greater London,greater_london
+4618,North East England,north_east_england
+4619,North West England,north_west_england
+4625,South East England,south_east_england
+4626,South West England,south_west_england
+4622,West Midlands,west_midlands
+4620,Yorkshire and the Humber,yorkshire_and_the_humber
+433,Northern Ireland,northern_ireland
+434,Scotland,scotland
+4636,Wales,wales
+96,Southern Latin America,southern_latin_america
+97,Argentina,argentina
+98,Chile,chile
+99,Uruguay,uruguay
+31,"Central Europe, Eastern Europe, and Central Asia",central_europe_eastern_europe_and_central_asia
+56,Eastern Europe,eastern_europe
+57,Belarus,belarus
+58,Estonia,estonia
+59,Latvia,latvia
+60,Lithuania,lithuania
+61,Moldova,moldova
+62,Russia,russia
+63,Ukraine,ukraine
+42,Central Europe,central_europe
+43,Albania,albania
+44,Bosnia and Herzegovina,bosnia_and_herzegovina
+45,Bulgaria,bulgaria
+46,Croatia,croatia
+47,Czech Republic,czech_republic
+48,Hungary,hungary
+49,Macedonia,macedonia
+50,Montenegro,montenegro
+51,Poland,poland
+52,Romania,romania
+53,Serbia,serbia
+54,Slovakia,slovakia
+55,Slovenia,slovenia
+32,Central Asia,central_asia
+33,Armenia,armenia
+34,Azerbaijan,azerbaijan
+35,Georgia,georgia
+36,Kazakhstan,kazakhstan
+37,Kyrgyzstan,kyrgyzstan
+38,Mongolia,mongolia
+39,Tajikistan,tajikistan
+40,Turkmenistan,turkmenistan
+41,Uzbekistan,uzbekistan
+103,Latin America and Caribbean,latin_america_and_caribbean
+124,Central Latin America,central_latin_america
+125,Colombia,colombia
+126,Costa Rica,costa_rica
+127,El Salvador,el_salvador
+128,Guatemala,guatemala
+129,Honduras,honduras
+130,Mexico,mexico
+131,Nicaragua,nicaragua
+132,Panama,panama
+133,Venezuela,venezuela
+120,Andean Latin America,andean_latin_america
+121,Bolivia,bolivia
+122,Ecuador,ecuador
+123,Peru,peru
+104,Caribbean,caribbean
+105,Antigua and Barbuda,antigua_and_barbuda
+106,The Bahamas,the_bahamas
+107,Barbados,barbados
+108,Belize,belize
+305,Bermuda,bermuda
+109,Cuba,cuba
+110,Dominica,dominica
+111,Dominican Republic,dominican_republic
+112,Grenada,grenada
+113,Guyana,guyana
+114,Haiti,haiti
+115,Jamaica,jamaica
+385,Puerto Rico,puerto_rico
+116,Saint Lucia,saint_lucia
+117,Saint Vincent and the Grenadines,saint_vincent_and_the_grenadines
+118,Suriname,suriname
+119,Trinidad and Tobago,trinidad_and_tobago
+422,"Virgin Islands, U.S.",virgin_islands_u_s
+134,Tropical Latin America,tropical_latin_america
+135,Brazil,brazil
+136,Paraguay,paraguay
+4,"Southeast Asia, East Asia, and Oceania",southeast_asia_east_asia_and_oceania
+5,East Asia,east_asia
+6,China,china
+7,North Korea,north_korea
+8,Taiwan,taiwan
+9,Southeast Asia,southeast_asia
+10,Cambodia,cambodia
+11,Indonesia,indonesia
+12,Laos,laos
+13,Malaysia,malaysia
+14,Maldives,maldives
+183,Mauritius,mauritius
+15,Myanmar,myanmar
+16,Philippines,philippines
+17,Sri Lanka,sri_lanka
+186,Seychelles,seychelles
+18,Thailand,thailand
+19,Timor-Leste,timor_leste
+20,Vietnam,vietnam
+21,Oceania,oceania
+298,American Samoa,american_samoa
+25,Federated States of Micronesia,federated_states_of_micronesia
+22,Fiji,fiji
+351,Guam,guam
+23,Kiribati,kiribati
+24,Marshall Islands,marshall_islands
+376,Northern Mariana Islands,northern_mariana_islands
+26,Papua New Guinea,papua_new_guinea
+27,Samoa,samoa
+28,Solomon Islands,solomon_islands
+29,Tonga,tonga
+30,Vanuatu,vanuatu
+137,North Africa and Middle East,north_africa_and_middle_east
+138,North Africa and Middle East,north_africa_and_middle_east
+160,Afghanistan,afghanistan
+139,Algeria,algeria
+140,Bahrain,bahrain
+141,Egypt,egypt
+142,Iran,iran
+143,Iraq,iraq
+144,Jordan,jordan
+145,Kuwait,kuwait
+146,Lebanon,lebanon
+147,Libya,libya
+148,Morocco,morocco
+149,Palestine,palestine
+150,Oman,oman
+151,Qatar,qatar
+152,Saudi Arabia,saudi_arabia
+522,Sudan,sudan
+153,Syria,syria
+154,Tunisia,tunisia
+155,Turkey,turkey
+156,United Arab Emirates,united_arab_emirates
+157,Yemen,yemen
+158,South Asia,south_asia
+159,South Asia,south_asia
+161,Bangladesh,bangladesh
+162,Bhutan,bhutan
+163,India,india
+164,Nepal,nepal
+165,Pakistan,pakistan
+166,Sub-Saharan Africa,sub_saharan_africa
+192,Southern Sub-Saharan Africa,southern_sub_saharan_africa
+193,Botswana,botswana
+194,Lesotho,lesotho
+195,Namibia,namibia
+196,South Africa,south_africa
+197,Swaziland,swaziland
+198,Zimbabwe,zimbabwe
+199,Western Sub-Saharan Africa,western_sub_saharan_africa
+200,Benin,benin
+201,Burkina Faso,burkina_faso
+202,Cameroon,cameroon
+203,Cape Verde,cape_verde
+204,Chad,chad
+205,Cote d'Ivoire,cote_d_ivoire
+206,The Gambia,the_gambia
+207,Ghana,ghana
+208,Guinea,guinea
+209,Guinea-Bissau,guinea_bissau
+210,Liberia,liberia
+211,Mali,mali
+212,Mauritania,mauritania
+213,Niger,niger
+214,Nigeria,nigeria
+215,Sao Tome and Principe,sao_tome_and_principe
+216,Senegal,senegal
+217,Sierra Leone,sierra_leone
+218,Togo,togo
+174,Eastern Sub-Saharan Africa,eastern_sub_saharan_africa
+175,Burundi,burundi
+176,Comoros,comoros
+177,Djibouti,djibouti
+178,Eritrea,eritrea
+179,Ethiopia,ethiopia
+180,Kenya,kenya
+181,Madagascar,madagascar
+182,Malawi,malawi
+184,Mozambique,mozambique
+185,Rwanda,rwanda
+187,Somalia,somalia
+435,South Sudan,south_sudan
+189,Tanzania,tanzania
+190,Uganda,uganda
+191,Zambia,zambia
+167,Central Sub-Saharan Africa,central_sub_saharan_africa
+168,Angola,angola
+169,Central African Republic,central_african_republic
+170,Congo,congo
+171,Democratic Republic of the Congo,democratic_republic_of_the_congo
+172,Equatorial Guinea,equatorial_guinea
+173,Gabon,gabon
+44587,African Union,african_union
+44534,Commonwealth,commonwealth
+44535,Commonwealth High Income,commonwealth_high_income
+44536,Commonwealth Middle Income,commonwealth_middle_income
+44537,Commonwealth Low Income,commonwealth_low_income
+44585,European Free Trade Association,european_free_trade_association
+44593,EU-15,eu_15
+4743,European Union,european_union
+4744,EU and EFTA,eu_and_efta
+44590,Four World Regions,four_world_regions
+44559,Africa,africa
+44560,America,america
+44561,Asia,asia
+44562,Europe,europe
+44586,G20,g20
+44589,Gulf Cooperation Council,gulf_cooperation_council
+44642,Nordic Region,nordic_region
+44584,OECD Countries,oecd_countries
+44588,Southern African Development Community,southern_african_development_community
+44592,UN Regional Commissions,un_regional_commissions
+44579,ECA,eca
+44580,ECE,ece
+44581,ECLAC,eclac
+44582,ESCAP,escap
+44583,ESCWA,escwa
+479,WHO region,who_region
+44563,African Region,african_region
+44567,Eastern Mediterranean Region,eastern_mediterranean_region
+44566,European Region,european_region
+44564,Region of the Americas,region_of_the_americas
+44565,South-East Asia Region,south_east_asia_region
+44568,Western Pacific Region,western_pacific_region
+44591,World Bank Income Levels,world_bank_income_levels
+44575,World Bank High Income,world_bank_high_income
+44578,World Bank Low Income,world_bank_low_income
+44577,World Bank Lower Middle Income,world_bank_lower_middle_income
+44576,World Bank Upper Middle Income,world_bank_upper_middle_income
+478,World Bank Regions,world_bank_regions
+239,East Asia & Pacific - WB,east_asia_pacific_wb
+240,Europe & Central Asia - WB,europe_central_asia_wb
+241,Latin America & Caribbean - WB,latin_america_caribbean_wb
+243,Middle East & North Africa - WB,middle_east_north_africa_wb
+44638,North America,north_america
+244,South Asia - WB,south_asia_wb
+242,Sub-Saharan Africa - WB,sub_saharan_africa_wb

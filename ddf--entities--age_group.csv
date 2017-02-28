@@ -1,0 +1,31 @@
+age_group_id,age_group_name,age_group
+1,Under 5,under_5
+2,Early Neonatal,early_neonatal
+3,Late Neonatal,late_neonatal
+4,Post Neonatal,post_neonatal
+5,1 to 4,1_to_4
+6,5 to 9,5_to_9
+7,10 to 14,10_to_14
+8,15 to 19,15_to_19
+9,20 to 24,20_to_24
+10,25 to 29,25_to_29
+11,30 to 34,30_to_34
+12,35 to 39,35_to_39
+13,40 to 44,40_to_44
+14,45 to 49,45_to_49
+15,50 to 54,50_to_54
+16,55 to 59,55_to_59
+17,60 to 64,60_to_64
+18,65 to 69,65_to_69
+19,70 to 74,70_to_74
+20,75 to 79,75_to_79
+21,80 plus,80_plus
+22,All Ages,all_ages
+23,5-14 years,5_14_years
+24,15-49 years,15_49_years
+25,50-69 years,50_69_years
+26,70+ years,70_years
+27,Age-standardized,age_standardized
+28,<1 year,lt1_year
+162,10 to 19,10_to_19
+169,10 to 54,10_to_54

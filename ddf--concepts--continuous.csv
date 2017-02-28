@@ -1,4 +1,4 @@
-concept,name,type,unit
-mean,Mean,measure,years
-upper,95% Uncertainty Interval - Upper Bound,measure,years
-lower,95% Uncertainty Interval - Lower Bound,measure,years
+concept,name,concept_type
+life_expectancy_mean,Mean,measure
+life_expectancy_upper,95% Uncertainty Interval - Upper Bound,measure
+life_expectancy_lower,95% Uncertainty Interval - Lower Bound,measure
