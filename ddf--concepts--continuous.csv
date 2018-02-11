@@ -1,4 +1,0 @@
-concept,name,type,unit
-mean,Mean,measure,years
-upper,95% Uncertainty Interval - Upper Bound,measure,years
-lower,95% Uncertainty Interval - Lower Bound,measure,years

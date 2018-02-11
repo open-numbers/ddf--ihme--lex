@@ -1,0 +1,16 @@
+concept,concept_type
+mean,measure
+upper,measure
+lower,measure
+location,entity_domain
+sex,entity_domain
+age,entity_domain
+sort,string
+plot,string
+short_name,string
+medium_name,string
+label,string
+type,string
+name,string
+enabled,string
+year,time
