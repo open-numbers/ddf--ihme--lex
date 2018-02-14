@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-12T08:52:37.652221+00:00",
+    "created": "2018-02-14T01:17:01.116642+00:00",
     "resources": [
         {
             "path": "ddf--entities--location.csv",
@@ -197,7 +197,7 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "name",
+                "value": "medium_name",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -207,6 +207,24 @@
                     "location"
                 ],
                 "value": "type",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "short_name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "name",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -222,20 +240,11 @@
             },
             {
                 "primaryKey": [
-                    "location"
+                    "sex"
                 ],
-                "value": "short_name",
+                "value": "name",
                 "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "medium_name",
-                "resources": [
-                    "ddf--entities--location"
+                    "ddf--entities--sex"
                 ]
             },
             {
@@ -249,18 +258,9 @@
             },
             {
                 "primaryKey": [
-                    "sex"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--sex"
-                ]
-            },
-            {
-                "primaryKey": [
                     "age"
                 ],
-                "value": "name",
+                "value": "plot",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -287,7 +287,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "sort",
+                "value": "name",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -296,7 +296,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "plot",
+                "value": "sort",
                 "resources": [
                     "ddf--entities--age"
                 ]
