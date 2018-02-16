@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-15T01:18:10.316816+00:00",
+    "created": "2018-02-16T01:53:35.317177+00:00",
     "resources": [
         {
             "path": "ddf--entities--location.csv",
@@ -206,7 +206,7 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "medium_name",
+                "value": "enabled",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -215,7 +215,7 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "enabled",
+                "value": "type",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -233,9 +233,18 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "type",
+                "value": "medium_name",
                 "resources": [
                     "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "sex"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--sex"
                 ]
             },
             {
@@ -249,18 +258,9 @@
             },
             {
                 "primaryKey": [
-                    "sex"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--sex"
-                ]
-            },
-            {
-                "primaryKey": [
                     "age"
                 ],
-                "value": "sort",
+                "value": "name",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -269,7 +269,16 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "name",
+                "value": "type",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "short_name",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -287,16 +296,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "short_name",
-                "resources": [
-                    "ddf--entities--age"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "type",
+                "value": "sort",
                 "resources": [
                     "ddf--entities--age"
                 ]
