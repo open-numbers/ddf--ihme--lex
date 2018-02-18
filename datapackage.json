@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-17T00:56:33.392764+00:00",
+    "created": "2018-02-18T01:22:16.576927+00:00",
     "resources": [
         {
             "path": "ddf--entities--location.csv",
@@ -197,7 +197,7 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "type",
+                "value": "short_name",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -215,7 +215,16 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "short_name",
+                "value": "enabled",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "type",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -225,15 +234,6 @@
                     "location"
                 ],
                 "value": "medium_name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "enabled",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -260,7 +260,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "type",
+                "value": "short_name",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -278,7 +278,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "short_name",
+                "value": "plot",
                 "resources": [
                     "ddf--entities--age"
                 ]
@@ -287,7 +287,7 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "plot",
+                "value": "type",
                 "resources": [
                     "ddf--entities--age"
                 ]
