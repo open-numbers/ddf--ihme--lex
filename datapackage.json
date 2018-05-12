@@ -3,8 +3,137 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-18T01:22:16.576927+00:00",
+    "created": "2018-05-12T02:10:13.016113+00:00",
     "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--datapoints--lower--by--location--sex--age--year.csv",
+            "name": "ddf--datapoints--lower--by--location--sex--age--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "age"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "lower"
+                    }
+                ],
+                "primaryKey": [
+                    "location",
+                    "sex",
+                    "age",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--mean--by--location--sex--age--year.csv",
+            "name": "ddf--datapoints--mean--by--location--sex--age--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "age"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "mean"
+                    }
+                ],
+                "primaryKey": [
+                    "location",
+                    "sex",
+                    "age",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
+            "name": "ddf--datapoints--upper--by--location--sex--age--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "age"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "upper"
+                    }
+                ],
+                "primaryKey": [
+                    "location",
+                    "sex",
+                    "age",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--age.csv",
+            "name": "ddf--entities--age",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "age"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "short_name"
+                    },
+                    {
+                        "name": "sort"
+                    },
+                    {
+                        "name": "plot"
+                    },
+                    {
+                        "name": "type"
+                    }
+                ],
+                "primaryKey": "age"
+            }
+        },
         {
             "path": "ddf--entities--location.csv",
             "name": "ddf--entities--location",
@@ -49,135 +178,6 @@
                 ],
                 "primaryKey": "sex"
             }
-        },
-        {
-            "path": "ddf--datapoints--mean--by--location--sex--age--year.csv",
-            "name": "ddf--datapoints--mean--by--location--sex--age--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "location"
-                    },
-                    {
-                        "name": "sex"
-                    },
-                    {
-                        "name": "age"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "mean"
-                    }
-                ],
-                "primaryKey": [
-                    "location",
-                    "sex",
-                    "age",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--entities--age.csv",
-            "name": "ddf--entities--age",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "age"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "short_name"
-                    },
-                    {
-                        "name": "sort"
-                    },
-                    {
-                        "name": "plot"
-                    },
-                    {
-                        "name": "type"
-                    }
-                ],
-                "primaryKey": "age"
-            }
-        },
-        {
-            "path": "ddf--datapoints--lower--by--location--sex--age--year.csv",
-            "name": "ddf--datapoints--lower--by--location--sex--age--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "location"
-                    },
-                    {
-                        "name": "sex"
-                    },
-                    {
-                        "name": "age"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "lower"
-                    }
-                ],
-                "primaryKey": [
-                    "location",
-                    "sex",
-                    "age",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--concepts.csv",
-            "name": "ddf--concepts",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "concept"
-                    },
-                    {
-                        "name": "concept_type"
-                    }
-                ],
-                "primaryKey": "concept"
-            }
-        },
-        {
-            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
-            "name": "ddf--datapoints--upper--by--location--sex--age--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "location"
-                    },
-                    {
-                        "name": "sex"
-                    },
-                    {
-                        "name": "age"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "upper"
-                    }
-                ],
-                "primaryKey": [
-                    "location",
-                    "sex",
-                    "age",
-                    "year"
-                ]
-            }
         }
     ],
     "ddfSchema": {
@@ -197,43 +197,7 @@
                 "primaryKey": [
                     "location"
                 ],
-                "value": "short_name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
                 "value": "enabled",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "type",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "medium_name",
                 "resources": [
                     "ddf--entities--location"
                 ]
@@ -249,29 +213,38 @@
             },
             {
                 "primaryKey": [
+                    "location"
+                ],
+                "value": "medium_name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
                     "sex"
                 ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--sex"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "short_name",
-                "resources": [
-                    "ddf--entities--age"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--age"
                 ]
             },
             {
@@ -287,9 +260,18 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "type",
+                "value": "short_name",
                 "resources": [
                     "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "short_name",
+                "resources": [
+                    "ddf--entities--location"
                 ]
             },
             {
@@ -299,6 +281,24 @@
                 "value": "sort",
                 "resources": [
                     "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "type",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "type",
+                "resources": [
+                    "ddf--entities--location"
                 ]
             }
         ],
@@ -310,9 +310,9 @@
                     "sex",
                     "year"
                 ],
-                "value": "mean",
+                "value": "lower",
                 "resources": [
-                    "ddf--datapoints--mean--by--location--sex--age--year"
+                    "ddf--datapoints--lower--by--location--sex--age--year"
                 ]
             },
             {
@@ -322,9 +322,9 @@
                     "sex",
                     "year"
                 ],
-                "value": "lower",
+                "value": "mean",
                 "resources": [
-                    "ddf--datapoints--lower--by--location--sex--age--year"
+                    "ddf--datapoints--mean--by--location--sex--age--year"
                 ]
             },
             {
