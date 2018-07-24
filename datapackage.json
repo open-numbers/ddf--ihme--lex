@@ -3,82 +3,8 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-11T15:28:10.934281+00:00",
+    "created": "2018-05-17T05:06:34.974501+00:00",
     "resources": [
-        {
-            "path": "ddf--entities--location.csv",
-            "name": "ddf--entities--location",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "location"
-                    },
-                    {
-                        "name": "type"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "medium_name"
-                    },
-                    {
-                        "name": "short_name"
-                    },
-                    {
-                        "name": "enabled"
-                    }
-                ],
-                "primaryKey": "location"
-            }
-        },
-        {
-            "path": "ddf--entities--sex.csv",
-            "name": "ddf--entities--sex",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "sex"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "label"
-                    }
-                ],
-                "primaryKey": "sex"
-            }
-        },
-        {
-            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
-            "name": "ddf--datapoints--upper--by--location--sex--age--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "location"
-                    },
-                    {
-                        "name": "sex"
-                    },
-                    {
-                        "name": "age"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "upper"
-                    }
-                ],
-                "primaryKey": [
-                    "location",
-                    "sex",
-                    "age",
-                    "year"
-                ]
-            }
-        },
         {
             "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
@@ -153,6 +79,35 @@
             }
         },
         {
+            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
+            "name": "ddf--datapoints--upper--by--location--sex--age--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "age"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "upper"
+                    }
+                ],
+                "primaryKey": [
+                    "location",
+                    "sex",
+                    "age",
+                    "year"
+                ]
+            }
+        },
+        {
             "path": "ddf--entities--age.csv",
             "name": "ddf--entities--age",
             "schema": {
@@ -177,6 +132,51 @@
                     }
                 ],
                 "primaryKey": "age"
+            }
+        },
+        {
+            "path": "ddf--entities--location.csv",
+            "name": "ddf--entities--location",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location"
+                    },
+                    {
+                        "name": "type"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "medium_name"
+                    },
+                    {
+                        "name": "short_name"
+                    },
+                    {
+                        "name": "enabled"
+                    }
+                ],
+                "primaryKey": "location"
+            }
+        },
+        {
+            "path": "ddf--entities--sex.csv",
+            "name": "ddf--entities--sex",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "label"
+                    }
+                ],
+                "primaryKey": "sex"
             }
         }
     ],
@@ -204,42 +204,6 @@
             },
             {
                 "primaryKey": [
-                    "location"
-                ],
-                "value": "medium_name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "short_name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "type",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "location"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--location"
-                ]
-            },
-            {
-                "primaryKey": [
                     "sex"
                 ],
                 "value": "label",
@@ -249,38 +213,38 @@
             },
             {
                 "primaryKey": [
+                    "location"
+                ],
+                "value": "medium_name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
                     "sex"
                 ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--sex"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "sort",
-                "resources": [
-                    "ddf--entities--age"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "short_name",
-                "resources": [
-                    "ddf--entities--age"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "age"
-                ],
-                "value": "type",
-                "resources": [
-                    "ddf--entities--age"
                 ]
             },
             {
@@ -296,25 +260,49 @@
                 "primaryKey": [
                     "age"
                 ],
-                "value": "name",
+                "value": "short_name",
                 "resources": [
                     "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "short_name",
+                "resources": [
+                    "ddf--entities--location"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "sort",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age"
+                ],
+                "value": "type",
+                "resources": [
+                    "ddf--entities--age"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "location"
+                ],
+                "value": "type",
+                "resources": [
+                    "ddf--entities--location"
                 ]
             }
         ],
         "datapoints": [
-            {
-                "primaryKey": [
-                    "age",
-                    "location",
-                    "sex",
-                    "year"
-                ],
-                "value": "upper",
-                "resources": [
-                    "ddf--datapoints--upper--by--location--sex--age--year"
-                ]
-            },
             {
                 "primaryKey": [
                     "age",
@@ -337,6 +325,18 @@
                 "value": "mean",
                 "resources": [
                     "ddf--datapoints--mean--by--location--sex--age--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "age",
+                    "location",
+                    "sex",
+                    "year"
+                ],
+                "value": "upper",
+                "resources": [
+                    "ddf--datapoints--upper--by--location--sex--age--year"
                 ]
             }
         ]
