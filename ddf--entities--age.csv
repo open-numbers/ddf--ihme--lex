@@ -27,7 +27,7 @@ age,name,short_name,sort,plot,type
 25,50-69 years,50-69,25,0,aggregate
 26,70+ years,70+,26,0,aggregate
 27,Age-standardized,,27,0,aggregate
-28,<1 year,,10000,0,aggregate
+28,<1 year,<1,10000,0,aggregate
 284,20 to 54 years,20-54,10000,0,aggregate
 285,55 to 89 years,55-89,10000,0,aggregate
 286,60 to 89 years,60-89,10000,0,aggregate
