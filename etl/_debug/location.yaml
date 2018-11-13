@@ -1,0 +1,28 @@
+info:
+    id: test-location-mapping
+
+ingredients:
+    - id: gbd-locations
+      dataset: ddf--ihme--lex
+      key: location
+      value: "*"
+    - id: geo-synonym
+      dataset: ddf--gapminder--geo_entity_domain
+      key: country, synonym
+      value: "*"
+
+cooking:
+    entities:
+        - procedure: translate_column
+          ingredients:
+            - gbd-locations
+          result: gbd-locations-aligned
+          options:
+              column: medium_name
+              target_column: geo
+              dictionary:
+                  base: geo-synonym
+                  key: synonym
+                  value: country
+              not_found: include
+              debug: true
