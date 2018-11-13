@@ -10,7 +10,7 @@ age,name,short_name,sort,plot,type
 158,<20 years,<20,10000,1,aggregate
 159,10 to 24,10-24,10000,1,aggregate
 16,55 to 59,55,16,1,specific
-162,10 to 19,,10000,0,specific
+164,Birth,Birth,1,1,specific
 169,10 to 54,,10000,0,aggregate
 17,60 to 64,60,17,1,specific
 172,0 to 9,0-9,10000,0,aggregate
@@ -27,7 +27,7 @@ age,name,short_name,sort,plot,type
 25,50-69 years,50-69,25,0,aggregate
 26,70+ years,70+,26,0,aggregate
 27,Age-standardized,,27,0,aggregate
-28,<1 year,,10000,0,aggregate
+28,<1 year,<1,10000,0,aggregate
 284,20 to 54 years,20-54,10000,0,aggregate
 285,55 to 89 years,55-89,10000,0,aggregate
 286,60 to 89 years,60-89,10000,0,aggregate
