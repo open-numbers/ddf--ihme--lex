@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-05-17T05:06:34.974501+00:00",
+    "created": "2018-11-13T06:52:00.866396+00:00",
     "resources": [
         {
             "path": "ddf--concepts.csv",
@@ -339,6 +339,7 @@
                     "ddf--datapoints--upper--by--location--sex--age--year"
                 ]
             }
-        ]
+        ],
+        "synonyms": []
     }
 }

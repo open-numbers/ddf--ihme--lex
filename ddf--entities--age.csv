@@ -6,12 +6,14 @@ age,name,short_name,sort,plot,type
 13,40 to 44,40,13,1,specific
 14,45 to 49,45,14,1,specific
 15,50 to 54,50,15,1,specific
+155,15 to 60,,7,1,specific
 158,<20 years,<20,10000,1,aggregate
 159,10 to 24,10-24,10000,1,aggregate
 16,55 to 59,55,16,1,specific
-162,10 to 19,,10000,0,specific
+164,Birth,Birth,1,1,specific
 169,10 to 54,,10000,0,aggregate
 17,60 to 64,60,17,1,specific
+172,0 to 9,0-9,10000,0,aggregate
 18,65 to 69,65,18,1,specific
 19,70 to 74,70,19,1,specific
 2,Early Neonatal,EN,2,1,specific
@@ -19,17 +21,25 @@ age,name,short_name,sort,plot,type
 21,80 plus,80,21,1,specific
 22,All Ages,All,1,0,aggregate
 23,5-14 years,5-14,23,0,aggregate
+230,60 to 79,60-79,10000,0,aggregate
 235,95 plus,95+,10000,0,aggregate
 24,15-49 years,15-49,24,0,aggregate
 25,50-69 years,50-69,25,0,aggregate
 26,70+ years,70+,26,0,aggregate
 27,Age-standardized,,27,0,aggregate
-28,<1 year,,10000,0,aggregate
+28,<1 year,<1,10000,0,aggregate
+284,20 to 54 years,20-54,10000,0,aggregate
+285,55 to 89 years,55-89,10000,0,aggregate
+286,60 to 89 years,60-89,10000,0,aggregate
+287,65 to 89 years,65-89,10000,0,aggregate
+288,70 to 89 years,70-89,10000,0,aggregate
+289,75 to 94 years,75-94,10000,0,aggregate
 3,Late Neonatal,LN,3,1,specific
 30,80 to 84,80,21,0,specific
 31,85 to 89,85,22,0,specific
 32,90 to 94,90,23,0,specific
 4,Post Neonatal,PN,4,1,specific
+41,50 to 74 years,50-74,10000,0,aggregate
 5,1 to 4,1,5,1,specific
 6,5 to 9,5,6,1,specific
 7,10 to 14,10,7,1,specific
