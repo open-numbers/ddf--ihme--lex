@@ -5,12 +5,12 @@ lower,measure
 location,entity_domain
 sex,entity_domain
 age,entity_domain
-enabled,string
 label,string
-short_name,string
-type,string
-name,string
 plot,string
-medium_name,string
+type,string
+enabled,string
+name,string
+short_name,string
 sort,string
+medium_name,string
 year,time
