@@ -6,11 +6,11 @@ location,entity_domain
 sex,entity_domain
 age,entity_domain
 label,string
-plot,string
-type,string
-enabled,string
-name,string
 short_name,string
+plot,string
+enabled,string
 sort,string
+type,string
 medium_name,string
+name,string
 year,time
