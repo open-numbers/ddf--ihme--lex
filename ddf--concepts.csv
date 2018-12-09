@@ -7,10 +7,10 @@ sex,entity_domain
 age,entity_domain
 label,string
 short_name,string
-plot,string
-enabled,string
-sort,string
+name,string
 type,string
 medium_name,string
-name,string
+plot,string
+sort,string
+enabled,string
 year,time
