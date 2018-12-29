@@ -8,7 +8,7 @@ from io import BytesIO
 
 import pandas as pd
 
-from ddf_utils.factory import ihme
+from ddf_utils.factory import IHMELoader
 from ddf_utils.str import format_float_digits
 
 
@@ -38,6 +38,7 @@ def main():
     print('reading source files...')
     data = read_source()
     print('reading metadata...')
+    ihme = IHMELoader()
     md = ihme.load_metadata()
 
     print('creating ddf...')
