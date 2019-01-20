@@ -3,11 +3,11 @@
     "language": {
         "id": "en"
     },
-    "created": "2019-01-14T12:41:30.631869+00:00",
+    "created": "2019-01-20T02:58:47.735607+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
             "schema": {
                 "fields": [
                     {
@@ -21,8 +21,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--lower--by--location--sex--age--year.csv",
             "name": "ddf--datapoints--lower--by--location--sex--age--year",
+            "path": "ddf--datapoints--lower--by--location--sex--age--year.csv",
             "schema": {
                 "fields": [
                     {
@@ -50,8 +50,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--mean--by--location--sex--age--year.csv",
             "name": "ddf--datapoints--mean--by--location--sex--age--year",
+            "path": "ddf--datapoints--mean--by--location--sex--age--year.csv",
             "schema": {
                 "fields": [
                     {
@@ -79,8 +79,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
             "name": "ddf--datapoints--upper--by--location--sex--age--year",
+            "path": "ddf--datapoints--upper--by--location--sex--age--year.csv",
             "schema": {
                 "fields": [
                     {
@@ -108,8 +108,8 @@
             }
         },
         {
-            "path": "ddf--entities--age.csv",
             "name": "ddf--entities--age",
+            "path": "ddf--entities--age.csv",
             "schema": {
                 "fields": [
                     {
@@ -135,8 +135,8 @@
             }
         },
         {
-            "path": "ddf--entities--location.csv",
             "name": "ddf--entities--location",
+            "path": "ddf--entities--location.csv",
             "schema": {
                 "fields": [
                     {
@@ -162,8 +162,8 @@
             }
         },
         {
-            "path": "ddf--entities--sex.csv",
             "name": "ddf--entities--sex",
+            "path": "ddf--entities--sex.csv",
             "schema": {
                 "fields": [
                     {
