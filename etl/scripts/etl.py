@@ -83,8 +83,7 @@ def main():
             clist.append({'concept': v_, 'concept_type': k})
 
     cdf = pd.DataFrame.from_records(clist)
-    cdf.to_csv(osp.join(out_dir,
-                        'ddf--concepts.csv'), index=False)
+    cdf.sort_values(by='concept').to_csv(osp.join(out_dir, 'ddf--concepts.csv'), index=False)
 
     print('Done.')
 
