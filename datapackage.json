@@ -3,7 +3,11 @@
     "language": {
         "id": "en"
     },
-    "created": "2019-03-17T02:51:40.608720+00:00",
+    "title": "ddf--ihme--lex",
+    "description": "",
+    "author": "",
+    "license": "",
+    "created": "2019-07-07T10:16:26.056273+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
