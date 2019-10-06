@@ -57,9 +57,9 @@ def main():
 
     # entities
     for e in ['location', 'sex', 'age']:
-        edf = md[e]
+        edf = md[e].copy()
         if e == 'location':
-            edf = edf[edf.location_id != 'custom'].drop('location_id', axis=1)
+            edf = edf[edf['id'] != 'custom']
             edf['id'] = edf['id'].map(int)
         edf = edf.rename(columns={'id': e})
         edf = edf.set_index(e)
