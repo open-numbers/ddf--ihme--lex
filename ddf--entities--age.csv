@@ -1,5 +1,4 @@
 age,name,short_name,sort,plot,type
-420,<70 years,<70,10000,1,aggregate
 1,Under 5,<5,22,0,aggregate
 2,Early Neonatal,EN,2,1,specific
 3,Late Neonatal,LN,3,1,specific
@@ -46,3 +45,4 @@ age,name,short_name,sort,plot,type
 287,65 to 89 years,65-89,10000,0,aggregate
 288,70 to 89 years,70-89,10000,0,aggregate
 289,75 to 94 years,75-94,10000,0,aggregate
+420,<70 years,<70,10000,1,aggregate
