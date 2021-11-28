@@ -1,59 +1,59 @@
 age,name,short_name,sort,plot,type
-1,Under 5,<5,22,0,aggregate
-2,Early Neonatal,EN,2,1,specific
-3,Late Neonatal,LN,3,1,specific
-4,Post Neonatal,PN,4,1,specific
-5,1 to 4,1,5,1,specific
-6,5 to 9,5,6,1,specific
-7,10 to 14,10,7,1,specific
-8,15 to 19,15,8,1,specific
-9,20 to 24,20,9,1,specific
-10,25 to 29,25,10,1,specific
-11,30 to 34,30,11,1,specific
-12,35 to 39,35,12,1,specific
-13,40 to 44,40,13,1,specific
-14,45 to 49,45,14,1,specific
-15,50 to 54,50,15,1,specific
-16,55 to 59,55,16,1,specific
-17,60 to 64,60,17,1,specific
-18,65 to 69,65,18,1,specific
-19,70 to 74,70,19,1,specific
-20,75 to 79,75,20,1,specific
-21,80 plus,80,21,1,specific
+1,Under 5,<5,31,0,aggregate
+2,Early Neonatal,EN,3,1,specific
+3,Late Neonatal,LN,4,1,specific
+4,Post Neonatal,PN,5,1,specific
+5,1 to 4,1,6,1,specific
+6,5 to 9,5,7,1,specific
+7,10 to 14,10,8,1,specific
+8,15 to 19,15,9,1,specific
+9,20 to 24,20,10,1,specific
+10,25 to 29,25,11,1,specific
+11,30 to 34,30,12,1,specific
+12,35 to 39,35,13,1,specific
+13,40 to 44,40,14,1,specific
+14,45 to 49,45,15,1,specific
+15,50 to 54,50,16,1,specific
+16,55 to 59,55,17,1,specific
+17,60 to 64,60,18,1,specific
+18,65 to 69,65,19,1,specific
+19,70 to 74,70,20,1,specific
+20,75 to 79,75,21,1,specific
+21,80 plus,80,58,1,specific
 22,All Ages,All,1,0,aggregate
-23,5-14 years,5-14,23,0,aggregate
-24,15-49 years,15-49,24,0,aggregate
-25,50-69 years,50-69,25,0,aggregate
-26,70+ years,70+,26,0,aggregate
-27,Age-standardized,Age-standardized,27,0,aggregate
-28,<1 year,<1,0,0,aggregate
-30,80 to 84,80,21,0,specific
-31,85 to 89,85,22,0,specific
-32,90 to 94,90,23,0,specific
-37,20 plus,20+ years,0,0,specific
-39,0 to 14,NULL,0,0,aggregate
-41,50 to 74 years,50-74,0,0,aggregate
-42,Neonatal,NN,0,0,aggregate
-157,25 plus,NULL,9,1,specific
-158,<20 years,<20,0,1,aggregate
-159,10 to 24,10-24,0,1,aggregate
-160,85 plus,85,0,0,specific
-164,Birth,Birth,1,1,specific
-169,10 to 54,NULL,0,0,aggregate
-172,0 to 9,0-9,0,0,aggregate
-188,5 to 19,5-19,0,0,aggregate
-197,15 to 39,15-39,0,0,aggregate
-206,25 to 49,25-49,0,0,aggregate
-228,55 plus,55+,0,0,aggregate
-230,60 to 79,60-79,0,0,aggregate
-232,65 to 74,65-74,0,0,aggregate
-234,75 plus,75+,0,0,aggregate
-235,95 plus,95+,0,0,aggregate
-243,75 to 84,75,0,0,aggregate
-284,20 to 54 years,20-54,0,0,aggregate
-285,55 to 89 years,55-89,0,0,aggregate
-286,60 to 89 years,60-89,0,0,aggregate
-287,65 to 89 years,65-89,0,0,aggregate
-288,70 to 89 years,70-89,0,0,aggregate
-289,75 to 94 years,75-94,0,0,aggregate
-420,<70 years,<70,0,1,aggregate
+23,5-14 years,5-14,32,0,aggregate
+24,15-49 years,15-49,38,0,aggregate
+25,50-69 years,50-69,44,0,aggregate
+26,70+ years,70+,53,0,aggregate
+27,Age-standardized,Age-standardized,2,0,aggregate
+28,<1 year,<1,30,0,aggregate
+30,80 to 84,80,22,0,specific
+31,85 to 89,85,23,0,specific
+32,90 to 94,90,24,0,specific
+37,20 plus,20+ years,40,0,specific
+39,0 to 14,NULL,29,0,aggregate
+41,50 to 74 years,50-74,45,0,aggregate
+42,Neonatal,NN,27,0,aggregate
+157,25 plus,NULL,42,1,specific
+158,<20 years,<20,39,1,aggregate
+159,10 to 24,10-24,35,1,aggregate
+160,85 plus,85,59,0,specific
+164,Birth,Birth,26,1,specific
+169,10 to 54,NULL,36,0,aggregate
+172,0 to 9,0-9,28,0,aggregate
+188,5 to 19,5-19,33,0,aggregate
+197,15 to 39,15-39,37,0,aggregate
+206,25 to 49,25-49,43,0,aggregate
+228,55 plus,55+,46,0,aggregate
+230,60 to 79,60-79,48,0,aggregate
+232,65 to 74,65-74,50,0,aggregate
+234,75 plus,75+,55,0,aggregate
+235,95 plus,95+,25,0,aggregate
+243,75 to 84,75,56,0,aggregate
+284,20 to 54 years,20-54,41,0,aggregate
+285,55 to 89 years,55-89,47,0,aggregate
+286,60 to 89 years,60-89,49,0,aggregate
+287,65 to 89 years,65-89,51,0,aggregate
+288,70 to 89 years,70-89,54,0,aggregate
+289,75 to 94 years,75-94,57,0,aggregate
+420,<70 years,<70,52,1,aggregate
