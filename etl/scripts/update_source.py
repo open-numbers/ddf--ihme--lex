@@ -5,7 +5,7 @@ import os
 import tempfile
 import shutil
 
-from ddf_utils.factory import ihme
+from ddf_utils.factory import IHMELoader
 
 
 source_dir = '../source'
@@ -18,6 +18,7 @@ def remove_old_source():
 
 
 def main():
+    ihme = IHMELoader()
     md = ihme.load_metadata()
     latest = md['version'].sort_values(by='id').iloc[-1, 0]
     print('latest version is: {}'.format(latest))

@@ -8,7 +8,7 @@ from io import BytesIO
 
 import pandas as pd
 
-from ddf_utils.factory import ihme
+from ddf_utils.factory import IHMELoader
 from ddf_utils.str import format_float_digits
 
 
@@ -38,6 +38,7 @@ def main():
     print('reading source files...')
     data = read_source()
     print('reading metadata...')
+    ihme = IHMELoader()
     md = ihme.load_metadata()
 
     print('creating ddf...')
@@ -56,9 +57,9 @@ def main():
 
     # entities
     for e in ['location', 'sex', 'age']:
-        edf = md[e]
+        edf = md[e].copy()
         if e == 'location':
-            edf = edf[edf.location_id != 'custom'].drop('location_id', axis=1)
+            edf = edf[edf['id'] != 'custom']
             edf['id'] = edf['id'].map(int)
         edf = edf.rename(columns={'id': e})
         edf = edf.set_index(e)
@@ -82,8 +83,7 @@ def main():
             clist.append({'concept': v_, 'concept_type': k})
 
     cdf = pd.DataFrame.from_records(clist)
-    cdf.to_csv(osp.join(out_dir,
-                        'ddf--concepts.csv'), index=False)
+    cdf.sort_values(by='concept').to_csv(osp.join(out_dir, 'ddf--concepts.csv'), index=False)
 
     print('Done.')
 
