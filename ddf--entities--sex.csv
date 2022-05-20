@@ -1,4 +1,4 @@
-sex,name,label
-1,Male,Males
-2,Female,Females
-3,Both,Both sexes
+sex,name
+1,male
+2,female
+3,both

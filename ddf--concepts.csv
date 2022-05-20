@@ -1,16 +1,12 @@
-concept,concept_type
-age,entity_domain
-enabled,string
-label,string
-location,entity_domain
-lower,measure
-mean,measure
-medium_name,string
-name,string
-plot,string
-sex,entity_domain
-short_name,string
-sort,string
-type,string
-upper,measure
-year,time
+concept,concept_type,name
+lex_with_shock,measure,Life expectancy
+lex_with_shock_upper,measure,Life expectancy (Upper Bound)
+lex_with_shock_lower,measure,Life expectancy (Lower Bound)
+lex_no_shock,measure,Life expectancy no-shock with hiv
+lex_no_shock_upper,measure,Life expectancy no-shock with hiv (Upper Bound)
+lex_no_shock_lower,measure,Life expectancy no-shock with hiv (Lower Bound)
+location,entity_domain,Location
+sex,entity_domain,Sex
+age_group,entity_domain,Age Group
+year,time,Year
+name,string,Name
